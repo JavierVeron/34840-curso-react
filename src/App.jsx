@@ -1,12 +1,10 @@
 import './App.css';
-import Encabezado from './components/Encabezado';
-import Producto from './components/Producto';
+import Transpiling from './components/Clase2/Transpiling';
 
 function App() {
   return (
     <div className="container">
-      <Encabezado />
-      <Producto />
+      <Transpiling />
     </div>
   );
 }
