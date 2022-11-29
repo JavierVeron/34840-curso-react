@@ -1,11 +1,16 @@
 import './App.css';
-import CompContenedor from './components/Clase3/CompContenedor';
-//import CompPresentacion from './components/Clase3/CompPresentacion';
+import Effect from './components/Clase4/Effect';
+
+/* const Mensaje = ({texto}) => {
+  return (
+    <p>Mensaje: {texto}</p>
+  )
+} */
 
 function App() {
   return (
     <div className="container">
-      <CompContenedor />
+      <Effect ubicacion="Buenos Aires, Argentina" />
     </div>
   );
 }
