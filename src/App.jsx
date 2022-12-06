@@ -1,10 +1,10 @@
 import './App.css';
-import Mapeo from './components/Clase5/Mapeo';
+import FetchApi from './components/Clase6/FetchApi';
 
 function App() {
   return (
     <div className="container">
-      <Mapeo />
+      <FetchApi buscar={"Iphone 14"} limite={12} />
     </div>
   );
 }
