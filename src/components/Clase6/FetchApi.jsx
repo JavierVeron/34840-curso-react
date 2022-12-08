@@ -1,14 +1,10 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const FetchApi = ({buscar, limite}) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + buscar + "&limit=" + limite)
-        .then((respuesta) => respuesta.json())
-        .then((data) => {
+        fetch("https://api.mercadolibre.com/sites/MLA/search?q=" + buscar + "&limit=" + limite).then((respuesta) => respuesta.json()).then((data) => {
             setItems(data.results);
         })
     }, [buscar, limite]);
@@ -31,7 +27,6 @@ const FetchApi = ({buscar, limite}) => {
                     </div>
                 )
             }
-
         </div>
     )
 }
