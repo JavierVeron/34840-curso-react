@@ -16,7 +16,7 @@ const Eventos = () => {
         console.log("Stop Propagation");
     }
 
-    /* const entradaAlBoton = () => {
+    const entradaAlBoton = () => {
         console.log("Entraste al Botón!");
     }
 
@@ -34,7 +34,7 @@ const Eventos = () => {
         return () => {
             window.removeEventListener("resize", onResize);
         }
-    }, []); */
+    }, []);
 
     return (
         <div className="container">
