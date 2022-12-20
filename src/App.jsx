@@ -5,7 +5,7 @@ import NavBar from './components/Clase7/NavBar';
 import Error404 from './components/Clase7/Error404';
 import Item from './components/Clase7/Item';
 import CartContextProvider from './components/context/CartContext';
-import PruebaContexto from './components/context/PruebaContexto';
+import Memo from './components/Clase10/Memo';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path={"/"} element={<PruebaContexto />} />
+          <Route exact path={"/"} element={<Memo item={{nombre:"Cola Cola", modifyDate:"18-12-2022"}} />} />
           <Route exact path={"/productos"} element={<Productos />} />
           <Route path={"/categoria/:categoryId"} element={<Productos />} />
           <Route path={"/item/:id"} element={<Item />} />
